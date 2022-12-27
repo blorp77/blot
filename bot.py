@@ -1,9 +1,13 @@
 import os
 import discord
 
+from dotenv import load_dotenv
 from discord.ext import commands
 from minesweeper import Minesweeper
 from music_cog import music_cog
+
+
+load_dotenv()
 
 bot = commands.Bot(command_prefix='!', intents=discord.Intents.all())
 
